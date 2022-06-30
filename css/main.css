@@ -1,0 +1,13 @@
+:root {
+  --main-bg-color: #ffffff;
+  --card-bg-color: #eeeeee;
+  --heading-color: #111111;
+  --dark-text-color: #555555;
+  --medium-text-color: #777777;
+  --light-text-color: #999999;
+  --highlight-color: #ff8139;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"); /*main font*/
+@import "reset.css";
+@import "media.css";
