@@ -1,13 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"); /*main font*/
+@import "reset.css";
+@import "media.css";
+
 :root {
   --main-bg-color: #ffffff;
-  --card-bg-color: #eeeeee;
+  --highlight-color: #ff3998;
   --heading-color: #111111;
   --dark-text-color: #555555;
   --medium-text-color: #777777;
   --light-text-color: #999999;
-  --highlight-color: #ff8139;
+  --card-bg-color: #eeeeee;
+  --card-heading-color: #ff8139;
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&display=swap"); /*main font*/
-@import "reset.css";
-@import "media.css";
+/* =======COMMON CSS======= */
+
+body {
+  background-color: var(--main-bg-color);
+}
+p {
+  color: var(--dark-text-color);
+}
+.section {
+  margin: 3% 0;
+}
+.logo-container {
+  width: 198px;
+  height: 36px;
+}
+/* ========HEADER========= */
+.header {
+  padding: 68px 0;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.navbar__icon {
+  display: none;
+}
+.navbar__link {
+  color: var(--dark-text-color);
+  font-size: 16px;
+  padding: 10px;
+  text-shadow: 1px 1px 2px var(--light-text-color);
+}
+.highlighted {
+  color: var(--highlight-color);
+  padding-right: 0;
+}
