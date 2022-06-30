@@ -231,3 +231,43 @@ h4 {
   color: var(--medium-text-color);
 }
 /* ----------------card end-------------  */
+
+/* ==========UPSELL============= */
+.upsell.section {
+  padding-bottom: 0;
+}
+.upsell .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-top: 1px solid var(--light-text-color);
+  border-bottom: 1px solid var(--light-text-color);
+  padding-top: 2%;
+}
+.upsell__left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+}
+.upsell__heading {
+  font-size: 45px;
+  font-weight: 900;
+  text-shadow: none;
+  padding: 25px 0;
+}
+.upsell__text {
+  width: 440px;
+  padding-bottom: 35px;
+}
+.upsell__right {
+  position: relative;
+  height: 500px;
+  width: 250px;
+}
+.upsell__image {
+  position: absolute;
+  bottom: 0;
+  right: 170px;
+}
