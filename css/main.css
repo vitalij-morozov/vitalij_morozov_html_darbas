@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;900&display=swap"); /*main font*/
 @import "reset.css";
-@import "media.css";
 
 :root {
   --main-bg-color: #ffffff;
@@ -25,7 +24,7 @@ p {
 }
 .section {
   /* margin: 90px 0; */
-  padding-bottom: 90px;
+  padding-bottom: 4%;
 }
 .logo-container {
   width: 198px;
@@ -80,6 +79,8 @@ h4 {
 }
 .navbar__icon {
   display: none;
+  font-size: 30px;
+  cursor: pointer;
 }
 .navbar__link {
   color: var(--dark-text-color);
@@ -93,9 +94,7 @@ h4 {
 }
 
 /* =======HERO======= */
-.hero.section {
-  margin-bottom: 0;
-}
+
 .hero .container {
   display: flex;
   align-items: flex-start;
@@ -108,34 +107,33 @@ h4 {
   letter-spacing: 0.1rem;
 }
 
-.hero_left {
-  width: 100%;
+.hero_left .section__subtitle {
+  padding-top: 25px;
 }
+
 .hero__heading {
   font-weight: 900;
-  font-size: 78px;
-  width: 540px;
-  padding: 4px 0 8px;
+  font-size: 80px;
+  padding: 25px 0;
+  width: 85%;
 }
 .hero__text {
-  width: 455px;
-  padding-bottom: 20px;
+  width: 65%;
+  padding-bottom: 30px;
 }
 
 .hero__right {
-  position: relative;
-  flex-basis: 50%;
+  width: 340px;
+  height: 430px;
 }
+
 .hero__image-container {
-  position: absolute;
+  background-image: url(../assets/2.hero/graphic2.png);
+  background-size: contain;
+  background-position: 30px;
+  background-repeat: no-repeat;
   width: 100%;
   height: 100%;
-  bottom: 65px;
-  left: 95px;
-}
-.hero__image {
-  width: 519px;
-  height: 519px;
 }
 
 /* ======BANNER======= */
@@ -168,12 +166,17 @@ h4 {
 
 .companies.section {
   margin: 30px 0;
-  padding: 40px 0;
 }
 .companies__logo-container {
   display: flex;
   justify-content: space-between;
   align-content: center;
+}
+.companies__logo:nth-child(2) {
+  display: none;
+}
+.companies__logo {
+  width: 132px;
 }
 
 /* =======SHOWCASE=======  */
@@ -265,23 +268,24 @@ h4 {
   padding-bottom: 35px;
 }
 .upsell__right {
-  position: relative;
   height: 500px;
-  width: 250px;
+  width: 340px;
 }
-.upsell__image {
-  position: absolute;
-  bottom: 0;
-  right: 60%;
+.upsell_right__image-container {
+  width: 100%;
+  height: 100%;
+  background-image: url(../assets/6.upsell/upsell-footer-image.svg);
+  background-position: -4px bottom;
+  background-repeat: no-repeat;
 }
+
 /* =========FOOTER========= */
-.footer {
-  padding: 3% 0;
-}
+
 .footer__top {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding: 3% 0;
 }
 .footer__left {
   flex-basis: 25%;
