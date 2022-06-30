@@ -24,7 +24,7 @@ p {
   line-height: 1.5;
 }
 .section {
-  margin: 3% 0;
+  margin: 5% 0;
 }
 .logo-container {
   width: 198px;
@@ -35,6 +35,7 @@ h2,
 h3,
 h4 {
   color: var(--heading-color);
+  text-shadow: 1px 1px 2px var(--light-text-color);
 }
 .main-btn {
   padding: 14px 40px;
@@ -46,6 +47,19 @@ h4 {
       padding-box,
     linear-gradient(
       30deg,
+      rgba(255, 57, 152, 1) 0%,
+      rgba(255, 57, 57, 1) 51%,
+      rgba(244, 136, 63, 1) 85%,
+      rgba(57, 255, 160, 0.9332107843137255) 98%
+    ),
+    border-box;
+  transition: 1s ease;
+}
+.main-btn:hover {
+  background: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255))
+      padding-box,
+    linear-gradient(
+      120deg,
       rgba(255, 57, 152, 1) 0%,
       rgba(255, 57, 57, 1) 51%,
       rgba(244, 136, 63, 1) 85%,
@@ -99,13 +113,13 @@ h4 {
 }
 .hero__heading {
   font-weight: 900;
-  font-size: 96px;
+  font-size: 78px;
   width: 540px;
-  padding: 3px 0 5px;
+  padding: 4px 0 8px;
 }
 .hero__text {
   width: 455px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 
 .hero__right {
