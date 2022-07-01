@@ -86,27 +86,31 @@
   }
   .section {
     padding-bottom: 45px;
+    margin-bottom: 3%;
   }
 
   /* ============HEADER============ */
 
   /* ==============HERO============ */
+  .hero__heading {
+    width: 100%;
+  }
+  .hero__text {
+    width: 100%;
+  }
   .hero .container {
     padding-right: 0;
   }
   .hero__left {
     padding-top: 30px;
   }
-  .hero__heading {
-    width: auto;
-  }
-  .hero__text {
-    width: auto;
-  }
   .hero__image-container {
-    width: 175px;
-    height: 250px;
+    width: 200px;
+    height: 70%;
     background-position: 95px top;
+  }
+  .hero__right {
+    width: fit-content;
   }
 
   /* ============BANNER============= */
@@ -146,6 +150,15 @@
   }
 }
 @media screen and (max-width: 390px) {
+  .hero__heading {
+    font-size: 40px;
+    padding: 15px 0;
+  }
+  .hero__text {
+    font-size: 15px;
+    padding-right: 15px;
+  }
+
   .upsell__heading {
     font-size: 35px;
     padding: 15px 0;
