@@ -1,0 +1,175 @@
+@media screen and (max-width: 1000px) {
+  .container {
+    max-width: unset;
+  }
+}
+
+/* ------------TABLET----------- */
+
+@media screen and (max-width: 750px) {
+  .container {
+    padding-right: 0;
+  }
+
+  /* ============HEADER============ */
+  .header {
+    padding: 35px 20px 0 0;
+  }
+  .navbar__icon {
+    display: inline-block;
+  }
+  .navbar__link {
+    display: none;
+  }
+
+  /* ==============HERO============ */
+  .hero__heading {
+    font-size: 45px;
+  }
+  .hero__image {
+    height: 450px;
+  }
+
+  /* =================BANNER============ */
+  .banner .container {
+    padding: 0;
+  }
+
+  /* ==============COMPANIES============= */
+  .companies__logo-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-right: 20px;
+    align-items: center;
+    gap: 15px;
+  }
+  .companies__logo {
+    flex-basis: 35%;
+  }
+  .companies__logo:nth-child(2) {
+    display: block;
+  }
+  .companies__logo:first-child,
+  .companies__logo:nth-child(5) {
+    display: none;
+  }
+
+  /* ================SHOWCASE=============== */
+  .showcase__cards-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  /* ===============FOOTER================= */
+  .footer__top {
+    padding-top: 40px;
+    flex-direction: column;
+    row-gap: 50px;
+  }
+  .footer__left__text {
+    padding-bottom: 20px;
+  }
+  .footer__right {
+    width: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 30px;
+    justify-content: center;
+  }
+  .footer__bottom {
+    padding-bottom: 40px;
+  }
+}
+
+/* -------MAIN MOBILE--------- */
+
+@media screen and (max-width: 450px) {
+  /* ==========COMMON CSS========== */
+  .section {
+    padding-bottom: 45px;
+    margin-bottom: 3%;
+  }
+
+  /* ==============HERO============ */
+  .hero__heading {
+    width: 100%;
+  }
+  .hero__text {
+    width: 100%;
+  }
+  .hero .container {
+    padding-bottom: 30px;
+  }
+  .hero__heading {
+    width: auto;
+    font-size: 40px;
+  }
+  .hero__text {
+    width: auto;
+  }
+  .hero__image {
+    height: 370px;
+    left: 54%;
+    bottom: 10%;
+  }
+  /* ============BANNER============= */
+  .banner__content {
+    padding: 0 20px 30px;
+    background-position: left;
+  }
+
+  /* ==============SHOWCASE============= */
+  .showcase__cards-container {
+    overflow: hidden;
+    gap: 10%;
+  }
+  .showcase__card {
+    width: 290px;
+    height: 400px;
+  }
+  .showcase__card:nth-child(3),
+  .showcase__card:last-child {
+    display: none;
+  }
+  /* ==============UPSELL================ */
+  .upsell__right {
+    display: flex;
+    align-items: flex-end;
+  }
+  .upsell_right__image-container {
+    height: 75%;
+    background-size: cover;
+  }
+
+  /* =============FOOTER================== */
+  .launch-container {
+    display: none;
+  }
+}
+
+/* ============MOBILE small================= */
+
+@media screen and (max-width: 390px) {
+  .hero__image {
+    left: 45%;
+    bottom: 4%;
+  }
+
+  .hero__heading {
+    font-size: 37px;
+    padding: 15px 0;
+  }
+  .hero__text {
+    font-size: 15px;
+    padding-right: 15px;
+  }
+
+  .upsell__heading {
+    font-size: 35px;
+    padding: 15px 0;
+  }
+  .upsell__text {
+    font-size: 0.9rem;
+    padding-bottom: 15px;
+  }
+}
