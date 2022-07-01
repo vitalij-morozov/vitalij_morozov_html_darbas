@@ -10,6 +10,7 @@
   --light-text-color: #999999;
   --card-bg-color: #eeeeee;
   --card-heading-color: #ff8139;
+  --border-color: #99999999;
 }
 
 /* =======COMMON CSS======= */
@@ -50,7 +51,7 @@ a:hover {
 }
 
 .main-btn {
-  padding: 14px 35px;
+  padding: 14px 40px;
   line-height: 1.5;
   font-weight: 600;
   border-radius: 35px;
@@ -117,8 +118,8 @@ a:hover {
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
-  overflow: hidden;
   padding-bottom: 90px;
+  overflow: hidden;
 }
 
 .hero_left .section__subtitle {
@@ -132,14 +133,11 @@ a:hover {
   font-weight: 900;
   font-size: 80px;
   padding: 20px 0;
-  width: 85%;
+  width: 80%;
 }
 .hero__text {
-  width: 65%;
+  width: 60%;
   padding-bottom: 20px;
-}
-.hero__right {
-  overflow: hidden;
 }
 .hero__image {
   position: absolute;
@@ -266,8 +264,8 @@ a:hover {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid #99999999;
-  border-bottom: 1px solid #99999999;
+  border-top: 1px solid var(--border-color);
+  border-bottom: 1px solid var(--border-color);
   padding-top: 2%;
 }
 .upsell__left {
@@ -285,7 +283,7 @@ a:hover {
   width: 65%;
 }
 .upsell__text {
-  width: 65%;
+  width: 60%;
   padding-bottom: 35px;
 }
 .upsell__right {

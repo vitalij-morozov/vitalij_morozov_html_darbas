@@ -10,9 +10,10 @@
   .container {
     padding-right: 0;
   }
+
   /* ============HEADER============ */
   .header {
-    padding: 35px 20px;
+    padding: 35px 20px 0 0;
   }
   .navbar__icon {
     display: inline-block;
@@ -28,6 +29,7 @@
   .hero__image {
     height: 450px;
   }
+
   /* =================BANNER============ */
   .banner .container {
     padding: 0;
@@ -37,9 +39,10 @@
   .companies__logo-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    padding-right: 20px;
     align-items: center;
-    gap: 20px;
+    gap: 15px;
   }
   .companies__logo {
     flex-basis: 35%;
@@ -108,13 +111,8 @@
   .hero__image {
     height: 370px;
     left: 54%;
-    bottom: 13%;
-
+    bottom: 10%;
   }
-  .hero__right {
-    width: fit-content;
-  }
-
   /* ============BANNER============= */
   .banner__content {
     padding: 0 20px 30px;
@@ -153,19 +151,18 @@
 /* ============MOBILE small================= */
 
 @media screen and (max-width: 390px) {
-
   .hero__image {
     left: 45%;
-    bottom: 25%;
+    bottom: 4%;
+  }
 
   .hero__heading {
-    font-size: 40px;
+    font-size: 37px;
     padding: 15px 0;
   }
   .hero__text {
     font-size: 15px;
     padding-right: 15px;
-
   }
 
   .upsell__heading {
