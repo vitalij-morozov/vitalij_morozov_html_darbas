@@ -1,25 +1,42 @@
-/* -------MOBILE--------- */
 @media screen and (max-width: 1000px) {
   .container {
     max-width: unset;
   }
 }
-@media screen and (max-width: 750px) {
+
+/* ------------TABLET----------- */
+
+@media screen and (max-width: 770px) {
+  .container {
+    padding-right: 0;
+  }
+  /* ============HEADER============ */
+  .header {
+    padding: 35px 20px;
+  }
   .navbar__icon {
     display: inline-block;
   }
   .navbar__link {
     display: none;
   }
+
+  /* ==============HERO============ */
   .hero__heading {
     font-size: 45px;
   }
+
+  /* =================BANNER============ */
+  .banner .container {
+    padding: 0;
+  }
+
+  /* ==============COMPANIES============= */
   .companies__logo-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    /* grid-template-columns: 1fr 1fr; */
     gap: 20px;
   }
   .companies__logo {
@@ -33,30 +50,47 @@
   .companies__logo:nth-child(5) {
     display: none;
   }
+
+  /* ================SHOWCASE=============== */
   .showcase__cards-container {
     grid-template-columns: 1fr 1fr;
   }
+
+  /* ===============FOOTER================= */
   .footer__top {
+    padding-top: 40px;
     flex-direction: column;
-    gap: 30px;
+    row-gap: 50px;
+  }
+  .footer__left__text {
+    padding-bottom: 20px;
   }
   .footer__right {
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 30px;
+    row-gap: 30px;
     justify-content: center;
   }
+  .footer__bottom {
+    padding-bottom: 40px;
+  }
 }
-@media screen and (max-width: 450px) {
+
+/* -------MAIN MOBILE--------- */
+
+@media screen and (max-width: 500px) {
+  /* ==========COMMON CSS========== */
   .container {
     padding-right: 0;
   }
   .section {
     padding-bottom: 45px;
   }
-  .header {
-    padding: 35px 20px;
-  }
+
+  /* ============HEADER============ */
+
+  /* ==============HERO============ */
   .hero .container {
     padding-right: 0;
   }
@@ -66,7 +100,6 @@
   .hero__heading {
     width: auto;
   }
-
   .hero__text {
     width: auto;
   }
@@ -75,14 +108,29 @@
     height: 250px;
     background-position: 95px top;
   }
-  .banner .container {
-    padding: 0;
-  }
-  .showcase__cards-container {
-    display: inline-block;
-    /* grid-template-columns: 1fr 1fr 1fr 1fr; */
+
+  /* ============BANNER============= */
+
+  .banner__content {
+    padding-left: 20px;
+    padding-bottom: 30px;
+    background-position: left;
   }
 
+  /* ==============SHOWCASE============= */
+  .showcase__cards-container {
+    overflow: hidden;
+    gap: 10%;
+  }
+  .showcase__card {
+    width: 242px;
+    height: 362px;
+  }
+  .showcase__card:nth-child(3),
+  .showcase__card:last-child {
+    display: none;
+  }
+  /* ==============UPSELL================ */
   .upsell__right {
     display: flex;
     align-items: flex-end;
@@ -91,7 +139,19 @@
     height: 75%;
     background-size: cover;
   }
+
+  /* =============FOOTER================== */
   .launch-container {
     display: none;
+  }
+}
+@media screen and (max-width: 390px) {
+  .upsell__heading {
+    font-size: 35px;
+    padding: 15px 0;
+  }
+  .upsell__text {
+    font-size: 0.9rem;
+    padding-bottom: 15px;
   }
 }

@@ -21,22 +21,30 @@ p {
   color: var(--dark-text-color);
   line-height: 1.5;
 }
-.section {
-  /* margin: 90px 0; */
-  padding-bottom: 4%;
-}
-.logo-container {
-  width: 198px;
-  height: 36px;
-}
 h1,
 h2,
 h3,
 h4 {
   color: var(--heading-color);
 }
+
+.section {
+  /* margin: 90px 0; */
+  padding-bottom: 4%;
+}
+.section__subtitle {
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+}
+.logo-container {
+  width: 198px;
+  height: 36px;
+}
+
 .main-btn {
-  padding: 14px 40px;
+  padding: 14px 35px;
   line-height: 1.5;
   font-weight: 600;
   border-radius: 35px;
@@ -83,8 +91,12 @@ h4 {
 }
 .navbar__link {
   color: var(--dark-text-color);
-  font-size: 16px;
+  font-size: 17px;
   padding: 10px;
+  transition: color 0.3s ease;
+}
+.navbar__link:hover {
+  color: var(--heading-color);
 }
 .highlighted {
   color: var(--highlight-color);
@@ -98,17 +110,10 @@ h4 {
   align-items: flex-start;
   justify-content: space-between;
 }
-.section__subtitle {
-  font-weight: bold;
-  text-transform: uppercase;
-  line-height: 1.2;
-  letter-spacing: 0.1rem;
-}
 
 .hero_left .section__subtitle {
   padding-top: 25px;
 }
-
 .hero__heading {
   font-weight: 900;
   font-size: 80px;
@@ -124,7 +129,6 @@ h4 {
   width: 340px;
   height: 430px;
 }
-
 .hero__image-container {
   background-image: url(../assets/2.hero/graphic2.png);
   background-size: contain;
@@ -167,6 +171,8 @@ h4 {
 }
 .companies__logo-container {
   display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
   justify-content: space-between;
   align-content: center;
 }
@@ -194,6 +200,7 @@ h4 {
   grid-template-columns: repeat(4, 1fr);
   gap: 30px;
 }
+
 /* -----------SHOWCASE CARD------------- */
 .showcase__card {
   background-color: var(--card-bg-color);
@@ -236,6 +243,7 @@ h4 {
 /* ----------------card end-------------  */
 
 /* ==========UPSELL============= */
+
 .upsell.section {
   padding-bottom: 0;
 }
@@ -243,8 +251,8 @@ h4 {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  border-top: 1px solid var(--light-text-color);
-  border-bottom: 1px solid var(--light-text-color);
+  border-top: 1px solid #99999999;
+  border-bottom: 1px solid #99999999;
   padding-top: 2%;
 }
 .upsell__left {
