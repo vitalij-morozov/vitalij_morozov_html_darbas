@@ -6,7 +6,7 @@
 
 /* ------------TABLET----------- */
 
-@media screen and (max-width: 770px) {
+@media screen and (max-width: 750px) {
   .container {
     padding-right: 0;
   }
@@ -25,7 +25,9 @@
   .hero__heading {
     font-size: 45px;
   }
-
+  .hero__image {
+    height: 450px;
+  }
   /* =================BANNER============ */
   .banner .container {
     padding: 0;
@@ -79,41 +81,32 @@
 
 /* -------MAIN MOBILE--------- */
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 450px) {
   /* ==========COMMON CSS========== */
-  .container {
-    padding-right: 0;
-  }
   .section {
     padding-bottom: 45px;
   }
 
-  /* ============HEADER============ */
-
   /* ==============HERO============ */
   .hero .container {
-    padding-right: 0;
-  }
-  .hero__left {
-    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .hero__heading {
     width: auto;
+    font-size: 40px;
   }
   .hero__text {
     width: auto;
   }
-  .hero__image-container {
-    width: 175px;
-    height: 250px;
-    background-position: 95px top;
+  .hero__image {
+    height: 370px;
+    left: 54%;
+    bottom: 13%;
   }
 
   /* ============BANNER============= */
-
   .banner__content {
-    padding-left: 20px;
-    padding-bottom: 30px;
+    padding: 0 20px 30px;
     background-position: left;
   }
 
@@ -145,7 +138,15 @@
     display: none;
   }
 }
+
+/* ============MOBILE small================= */
+
 @media screen and (max-width: 390px) {
+  .hero__image {
+    left: 45%;
+    bottom: 25%;
+  }
+
   .upsell__heading {
     font-size: 35px;
     padding: 15px 0;
