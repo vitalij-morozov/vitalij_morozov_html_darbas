@@ -85,9 +85,16 @@
   /* ==========COMMON CSS========== */
   .section {
     padding-bottom: 45px;
+    margin-bottom: 3%;
   }
 
   /* ==============HERO============ */
+  .hero__heading {
+    width: 100%;
+  }
+  .hero__text {
+    width: 100%;
+  }
   .hero .container {
     padding-bottom: 30px;
   }
@@ -102,6 +109,10 @@
     height: 370px;
     left: 54%;
     bottom: 13%;
+
+  }
+  .hero__right {
+    width: fit-content;
   }
 
   /* ============BANNER============= */
@@ -142,9 +153,19 @@
 /* ============MOBILE small================= */
 
 @media screen and (max-width: 390px) {
+
   .hero__image {
     left: 45%;
     bottom: 25%;
+
+  .hero__heading {
+    font-size: 40px;
+    padding: 15px 0;
+  }
+  .hero__text {
+    font-size: 15px;
+    padding-right: 15px;
+
   }
 
   .upsell__heading {
