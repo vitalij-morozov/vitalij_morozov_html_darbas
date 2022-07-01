@@ -49,7 +49,6 @@
   }
   .companies__logo:nth-child(2) {
     display: block;
-    width: 132px;
   }
   .companies__logo:first-child,
   .companies__logo:nth-child(5) {
@@ -125,8 +124,8 @@
     gap: 10%;
   }
   .showcase__card {
-    width: 242px;
-    height: 362px;
+    width: 290px;
+    height: 400px;
   }
   .showcase__card:nth-child(3),
   .showcase__card:last-child {

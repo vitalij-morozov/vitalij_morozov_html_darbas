@@ -51,7 +51,7 @@ a:hover {
 }
 
 .main-btn {
-  padding: 14px 40px;
+  padding: 14px 45px;
   line-height: 1.5;
   font-weight: 600;
   border-radius: 35px;
@@ -83,8 +83,8 @@ a:hover {
 /* ========HEADER========= */
 
 .header {
-  padding: 70px 0;
-  margin-bottom: 2%;
+  padding: 60px 0;
+  background-color: var(--main-bg-color);
 }
 .header .container {
   display: flex;
@@ -96,11 +96,12 @@ a:hover {
   font-size: 25px;
   cursor: pointer;
   color: var(--light-text-color);
+  padding: 10px 0;
 }
 .navbar__link {
   color: var(--dark-text-color);
   font-size: 17px;
-  padding: 10px;
+  padding: 15px;
   transition: color 0.3s ease;
 }
 .navbar__link:hover {
@@ -118,7 +119,7 @@ a:hover {
   align-items: flex-start;
   justify-content: space-between;
   position: relative;
-  padding-bottom: 90px;
+  padding-bottom: 50px;
   overflow: hidden;
 }
 
@@ -133,16 +134,16 @@ a:hover {
   font-weight: 900;
   font-size: 80px;
   padding: 20px 0;
-  width: 80%;
+  width: 75%;
 }
 .hero__text {
   width: 60%;
-  padding-bottom: 20px;
+  padding-bottom: 25px;
 }
 .hero__image {
   position: absolute;
-  left: 50%;
-  bottom: -3%;
+  left: 54%;
+  bottom: -9%;
   height: 570px;
 }
 
@@ -175,7 +176,7 @@ a:hover {
 /* =======COMPANIES======= */
 
 .companies.section {
-  margin: 30px 0;
+  margin: 25px 0;
 }
 .companies__logo-container {
   display: flex;
@@ -185,10 +186,13 @@ a:hover {
   align-content: center;
 }
 .companies__logo {
-  width: 15%;
+  width: 13%;
 }
 .companies__logo:nth-child(2) {
   display: none;
+}
+.companies__logo:nth-child(4) {
+  width: 10%;
 }
 
 /* =======SHOWCASE=======  */
@@ -201,7 +205,7 @@ a:hover {
 }
 .showcase__text {
   padding-bottom: 40px;
-  width: 65%;
+  width: 72%;
 }
 .showcase__link {
   text-decoration: underline;
@@ -253,6 +257,7 @@ a:hover {
   text-shadow: none;
   color: var(--medium-text-color);
 }
+
 /* ----------------card end-------------  */
 
 /* ==========UPSELL============= */
@@ -331,7 +336,7 @@ a:hover {
   justify-content: space-between;
   align-items: flex-start;
   gap: 15px;
-  flex-basis: 50%;
+  flex-basis: 45%;
 }
 .footer__right__heading {
   color: var(--dark-text-color);
